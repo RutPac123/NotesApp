@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whitebac"
+    android:id="@+id/rel"
+    tools:context=".About">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Why NotesApp?"
+        android:textSize="32sp"
+        android:id="@+id/why"
+        android:layout_marginTop="50dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/why"
+        android:background="#000000"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/why"
+        android:orientation="vertical"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/pen"
+            android:text="Simple to use"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/pen"
+            android:layout_marginTop="20dp"
+            android:text="LightWeight"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/pen"
+            android:layout_marginTop="20dp"
+            android:text="Ads Free"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/pen"
+            android:layout_marginTop="20dp"
+            android:text="Efficient"/>
+    </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="copyrights @ NotesApp"
+    android:gravity="center"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="10dp"/>
+</RelativeLayout>

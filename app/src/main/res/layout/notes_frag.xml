@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/notesfrag"
+    android:background="@drawable/mainbak"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/my_notes"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="35dp"
+    android:id="@+id/mytitle"
+    android:fontFamily="serif-monospace"/>
+    <EditText
+        android:layout_width="350dp"
+        android:inputType="text"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:hint="Write title of your note here...."
+        android:layout_marginRight="60dp"
+        android:id="@+id/mheading"
+        android:layout_below="@+id/mytitle"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:inputType="text"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:hint="Write your note here...."
+        android:layout_marginRight="60dp"
+        android:id="@+id/mtext"
+        android:layout_below="@+id/mheading"
+        android:layout_marginTop="10dp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mtext"
+        android:layout_marginTop="10dp"
+        android:id="@+id/noteslist"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/maddbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:layout_below="@id/mheading"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/add"
+        />
+</RelativeLayout>
